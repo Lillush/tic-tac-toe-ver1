@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+
+.game__background {
+    background: linear-gradient(100deg, rgb(107, 107, 228), rgb(155, 155, 221));
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title {
+    color: rgb(245, 237, 163);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.display {
+    color: rgb(245, 237, 163);
+    font-size: 20px;
+    text-align: center;
+    margin: 20px auto;
+   
+}
+
+.btn__start {
+    background-color: rgb(245, 237, 163);
+    color: rgb(107, 107, 228);
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    vertical-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.gamefield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50vw;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto)
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(245, 237, 163);
+    font-size: 250%;
+    color: rgb(255, 238, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3) {
+	border-top: none;
+}
+
+.cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7) {
+	border-left: none;
+}
+
+.cell:nth-child(3), .cell:nth-child(6), .cell:nth-child(9) {
+	border-right: none;
+}
+
+.cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
+	border-bottom: none;
+}
+
+.btn__restart {
+    background-color: rgb(245, 237, 163);
+    color: rgb(107, 107, 228);
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    vertical-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.display__announce {
+    padding-bottom: 25px;
+    font-size: 30px;
+}
